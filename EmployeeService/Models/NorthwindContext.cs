@@ -48,7 +48,7 @@ namespace EmployeeService.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
+            optionsBuilder.UseSqlServer("Server=PHOKAIA;Database=Northwind; User Id=sa; Password=Doga251200;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
